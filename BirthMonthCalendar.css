@@ -1,0 +1,42 @@
+body{
+    background-color: dimgray;
+}
+.calendar{
+    margin: 50px;
+    max-width: 800px;
+    font-family: serif;
+    font-weight: bold;
+    color: black;
+}
+.month{
+    text-align: left;
+    background: dimgray;
+    font-size: 60px;
+    letter-spacing: 1px;
+    color: white;
+}
+table, th, td{
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    font-size: 27px;
+    font-family: Ubuntu;
+
+}
+tr, th,td{
+    padding: 15px;
+}
+th{
+    background: dimgray;
+    color: mediumturquoise;
+    font-family: arial;
+    font-weight: bold;
+}
+td{
+    background: dimgray;
+    color: white;
+    font-weight: bold;
+}
+td:hover{
+    background: grey;
+}
