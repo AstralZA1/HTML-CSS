@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    color: aqua;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: midnightblue;
+    padding: 10px;
+}
+.container{
+    max-width: 1000px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 25px;
+    background: cornflowerblue;
+}
+.container .heading{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+.container .heading::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: aqua;
+}
+.container form .carddetails{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .carddetails .cardbox{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+.carddetails .cardbox .details{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.carddetails .cardbox input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding-left: 15px;
+    font-size: 16px;
+    font-style: italic;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+form .genderform .gendertitle{
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid;
+}
+form .genderform .category{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+form .button{
+    text-align: center;
+}
+form .button input{
+    padding: 10px 0;
+    margin-top: 10px;
+    height: 100%;
+    width: 20%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: turquoise;
+}
+form .button input:hover{
+    background:  aqua;
+}
+@media (max-width:584px){
+    .container{
+        max-width: 100%;
+    }
+    form .carddetails .cardbox{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .genderform .category{
+        width: 100%;
+    }
+    .container form .carddetails{
+        max-height: 300px;
+        overflow: scroll;
+    }
+    .carddetails::-webkit-scrollbar{
+        width: 0;
+
+    }
+}
